@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+$font-main: 'Montserrat', sans-serif;
+$color-main: #1DB954;
+$color-background: black;
+$color-background-showcase: #a1248b;
+$color-background-package: #efefef;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-main;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+}
+
+// HEADER
+
+.header {
+    background-color: $color-background;
+    color: white;
+
+    // LOGO
+
+    .logo {
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.35rem;
+            margin-left: 5px;
+            cursor: default;
+        }    
+    }
+
+    // LINKS
+
+    .links {
+        width: 490px;
+
+        a {
+            font-size: 0.85rem;
+            font-weight: 700;
+
+            // LINK HOVER 
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+
+        // VERTICAL lINE BETWEEN DOWLOAD AND SIGN UP
+
+        li:nth-child(4) {
+            padding-left: 35px;
+            border-left: 1px solid;
+        }
+    }
+
+    // UTILITY
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// SHOWCASE
+
+.showcase {
+    
+    color: white;
+    background-color: $color-background-showcase;
+    height: 487px;
+
+    .showcase-section {
+        width: 690px;
+        justify-content: start;
+    }
+
+    .flex {
+        justify-content: space-evenly;
+    }
+
+    // MAIN CONTENT / 1st section
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    // MAIN CONTENT / 2nd & 3rd section
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    // BUTTON / CAN BE FOUND IN UTILITIES
+
+    // TERMS AND CONDITIONS
+
+    p {
+        font-size: x-small;
+        font-weight: 500;
+    }
+}
+
+// MEDIUM 
+
+.medium {
+    margin: 30px 0;
+    margin-bottom: 40px;
+
+    // MAIN CONTENT / FIRST SECTION
+
+    h1 {
+        margin: 70px 0;
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    // MAIN CONTENT / SECOND SECTION
+
+    .medium-content {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        margin: 30px 0;
+
+        .internal-content {
+            justify-items: center;
+            
+            i {
+                margin-bottom: 40px;
+            }
+            h3 {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+
+            p {
+                margin: 10px 0;
+                margin-bottom: 50px;
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+        }
+    } 
+
+}
+
+// PACKAGE 
+
+.package {
+    background-color: $color-background-package;
+    padding: 30px 0;
+
+    // MAIN CONTENT / FIRST SECTION
+
+    .package-content {
+        padding: 30px 0;
+        text-align: center;
+
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+    }
+    
+    // MAIN CONTENT / SECOND SECTION
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    // INDIVIDUAL / DUO / FAMILY / STUDENT
+
+    // FIRST SECTION
+
+    .first-section {
+        
+        h3 {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 800;
+            background-color: #0d72ea;
+            color: white;
+            padding: 6px 8px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+
+        p {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            padding-bottom: 15px;
+            border-bottom: 1px solid;
+        }
+    }
+
+    // SECOND SECTION
+
+    .second-section {
+        padding-top: 20px;
+        color: black;
+
+        li {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+
+        i {
+            padding-right: 15px;
+        }
+    }
+
+    // BUTTON ALLIGNMENT
+
+    .btn-padding-individual {
+        padding-bottom: 120px;
+    }
+
+    .btn-padding-duo {
+        padding-bottom: 95px;
+    }
+
+    .btn-padding-student {
+        padding-bottom: 95px;
+    }
+
+    .third-section {
+
+        // BUTTON
+
+        a {
+            display: flex;
+            justify-content: center;
+            font-size: 0.85rem;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        // TERMS & CONDITIONS
+
+        p {
+            font-size: x-small;
+            font-weight: 500;
+        }
+    }
+}
+
+// FOOTER
+
+.footer {
+    background-color: $color-background;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 130px;
+    }
+
+    // MAIN SECTION / LOGO
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.35rem;
+        margin-left: 5px;
+        cursor: default;
+    } 
+
+    // MAIN SECTION / LINKS
+
+    .footer-title {
+        padding-bottom: 20px;
+        color: darken($color: white, $amount: 30%);
+        font-weight: 600;
+    }
+
+    a {
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+        padding-bottom: 60px;
+
+        // LINK HOVER 
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+
+    // MAIN SECTION / SOCIAL LINK
+
+    .grid-social {
+        grid-column: 6 / 7;
+        justify-items: end;
+    }
+
+    // MAIN SECTION / BOTTOM LINKS
+
+    .footer-bottom-links {
+        a {
+            font-size: 0.75rem;
+            color: darken($color: white, $amount: 30%);
+            font-weight: 400;
+            padding-right: 20px;
+
+            // LINK HOVER 
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+    }
+}
+
+// UTILLIES
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.align-center {
+    align-items: center;
+}
+
+// margin 
+
+.my-4 {
+    margin: 1rem 0;
+}
+
+.my-5 {
+    margin: 1.25rem 0;
+}
+
+.my-6 {
+    margin: 1.50rem 0;
+}
+
+.my-7 {
+    margin: 1.75rem 0;
+}
+
+.my-8 {
+    margin: 2rem 0;
+}
+
+// padding
+
+.py-2 {
+    padding: 0.5rem 0;
+}
+
+.py-3 {
+    padding: 0.75rem 0;
+}
+.py-4 {
+    padding: 1rem 0;
+}
+
+.py-5 {
+    padding: 1.25rem 0;
+}
+
+.py-6 {
+    padding: 1.50rem 0;
+}
+
+.py-7 {
+    padding: 1.75rem 0;
+}
+
+.py-8 {
+    padding: 2rem 0;
+}
+
+// BUTTON 
+
+.btn {
+    display: inline-block;
+    background-color: $color-background;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 13px 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: lighten($color: $color-background, $amount: 10%);     
+    
+    &:hover {
+        transform: scale(1.05);
+        background: darken($color: $color-background, $amount: 100%);
+    }
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    background-color: $color-background-showcase;
+
+    &:hover {
+        transform: scale(1.05);
+        background: darken($color: $color-background-showcase, $amount: 5%);
+    }
+    
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 20px;
+    padding-bottom: 70px;
+    margin: 5px ;
+}
