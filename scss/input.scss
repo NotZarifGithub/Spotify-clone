@@ -79,10 +79,9 @@ body {
 // SHOWCASE
 
 .showcase {
-    
+    padding: 20px 0;
     color: white;
     background-color: $color-background-showcase;
-    height: 487px;
 
     .showcase-section {
         width: 690px;
@@ -97,6 +96,7 @@ body {
 
     h1 {
         font-size: 2.1rem;
+        line-height: 45px;
     }
 
     // MAIN CONTENT / 2nd & 3rd section
@@ -104,6 +104,7 @@ body {
     h3 {
         font-size: 1.3rem;
         font-weight: 600;
+        line-height: 40px;
     }
 
     // BUTTON / CAN BE FOUND IN UTILITIES
@@ -113,8 +114,20 @@ body {
     p {
         font-size: x-small;
         font-weight: 500;
+        max-width: 650px;
     }
+    
 }
+.showcase-image {   
+    display: block;
+    background-image: url(img/spotify.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}   
 
 // MEDIUM 
 
@@ -345,6 +358,8 @@ body {
 .container {
     max-width: 1150px;
     margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .flex {
